@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Node.js y Express</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 30px; text-align: center; margin-top: 50px; padding: 20%; }
+        .fecha-caja { font-size: 1.5em; color: #007bff; font-weight: bold; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1>Julio Gabriel Verjan Ochoa</h1>
+    <h2>La fecha y hora actual:</h2>
+    <div id="fecha" class="fecha-caja"></div>
+    <div><img src="https://recursos.ucol.mx/tesis/img/logo_negro.png" alt="Imagen"></div>
+
+    <script>
+        const fechActual = new Date();
+        const fechFormateada = fechActual.toLocaleString(); 
+        document.getElementById('fecha').innerText = fechFormateada;
+    </script>
+</body>
+</html>
